@@ -1,18 +1,23 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="border-t border-border bg-card">
       <div className="section-container py-14 md:py-20">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
-            <div className="flex items-baseline gap-2 mb-4">
-              <span className="font-display text-3xl text-foreground leading-none">2 Brothers</span>
-              <span className="font-display text-xl text-accent leading-none">Flooring</span>
+            <div className="flex items-center gap-3 mb-5">
+              <img src={logo} alt="2 Brothers Flooring Ltd" className="h-14 w-14 object-contain" />
+              <div className="flex items-baseline gap-2">
+                <span className="font-display text-2xl text-foreground leading-none">2 Brothers</span>
+                <span className="font-display text-base text-muted-foreground leading-none">Flooring</span>
+              </div>
             </div>
-            <p className="text-sm text-muted-foreground mt-3 leading-relaxed max-w-sm">
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
               A family-run flooring company specialising in carpet, vinyl and wet floors across Whanganui
               and Manawatu. If it has a floor, we can lay it.
             </p>
-            <p className="text-xs text-accent mt-5 tracking-[0.2em] uppercase font-semibold">
+            <p className="text-xs text-foreground mt-5 tracking-[0.2em] uppercase font-semibold">
               No sad stories. Just satisfied customers.
             </p>
           </div>
