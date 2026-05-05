@@ -18,7 +18,7 @@ const Footer = () => {
               and Manawatu. If it has a floor, we can lay it.
             </p>
             <p className="text-xs text-foreground mt-5 tracking-[0.2em] uppercase font-semibold">
-              No sad stories, just satisfied customers.
+              If it has a floor, we can lay it.
             </p>
           </div>
           <div className="md:col-span-3 md:col-start-7">

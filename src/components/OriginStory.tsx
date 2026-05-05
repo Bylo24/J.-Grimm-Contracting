@@ -47,8 +47,8 @@ const OriginStory = () => {
 
             <div className="mt-10 pt-6 border-t border-border">
               <blockquote className="font-display text-3xl md:text-4xl text-foreground leading-tight">
-                No sad stories.<br />
-                Just satisfied customers.
+                If it has a floor,<br />
+                we can lay it.
               </blockquote>
               <div className="mt-4 flex items-center gap-3">
                 <div className="w-8 h-px bg-foreground" />

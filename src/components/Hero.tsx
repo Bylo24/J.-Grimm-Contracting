@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="reveal-up delay-500 mt-16 md:mt-24 pt-6 border-t border-background/20 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 text-xs text-background/70 tracking-[0.2em] uppercase">
           <span>20 Years Experience</span>
           <span>Carpet, Vinyl, Wet Floors</span>
-          <span>No Sad Stories, Just Satisfied Customers</span>
+          <span>Whanganui and Manawatu</span>
         </div>
       </div>
     </section>
