@@ -62,27 +62,29 @@ const Testimonials = () => {
               <article
                 key={review.name}
                 className={`relative overflow-hidden rounded-2xl border ${
-                  featured ? "border-accent/30 bg-card shadow-[0_20px_60px_-30px_rgba(0,0,0,0.25)]" : "border-border bg-card"
+                  featured
+                    ? "border-accent/40 bg-neutral-950 text-white shadow-[0_20px_60px_-30px_rgba(0,0,0,0.45)]"
+                    : "border-border bg-card"
                 } p-6 sm:p-7 transition-transform duration-300 hover:-translate-y-0.5`}
               >
                 <div className="flex items-center justify-between gap-4 mb-5">
-                  <div className="flex items-center gap-1 text-accent">
+                  <div className={`flex items-center gap-1 ${featured ? "text-accent" : "text-accent"}`}>
                     {Array.from({ length: 5 }).map((_, starIndex) => (
                       <Star key={starIndex} size={14} fill="currentColor" strokeWidth={0} />
                     ))}
                   </div>
-                  <Quote size={22} className="text-muted-foreground/20 shrink-0" strokeWidth={1.5} />
+                  <Quote size={22} className={featured ? "text-white/20 shrink-0" : "text-muted-foreground/20 shrink-0"} strokeWidth={1.5} />
                 </div>
 
-                <p className="text-sm sm:text-base leading-relaxed text-foreground/90">
+                <p className={`text-sm sm:text-base leading-relaxed ${featured ? "text-white/90" : "text-foreground/90"}`}>
                   {review.quote}
                 </p>
 
-                <div className="mt-6 pt-5 border-t border-border">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground font-sans">
+                <div className={`mt-6 pt-5 border-t ${featured ? "border-white/10" : "border-border"}`}>
+                  <p className={`text-xs font-semibold uppercase tracking-[0.2em] font-sans ${featured ? "text-accent" : "text-muted-foreground"}`}>
                     {review.name}
                   </p>
-                  <p className="mt-2 text-xs text-muted-foreground">
+                  <p className={`mt-2 text-xs ${featured ? "text-white/55" : "text-muted-foreground"}`}>
                     Google review
                   </p>
                 </div>

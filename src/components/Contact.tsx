@@ -71,12 +71,12 @@ const Contact = ({ variant = "contact" }: Props) => {
               </div>
             </div>
 
-            <div className="lg:col-span-6 lg:col-start-7 bg-background p-6 sm:p-8 md:p-10 rounded-sm border border-border">
+            <div className="lg:col-span-6 lg:col-start-7 bg-neutral-950 text-white p-6 sm:p-8 md:p-10 rounded-sm border border-neutral-800 shadow-[0_25px_80px_-50px_rgba(0,0,0,0.7)]">
               <form onSubmit={handleSubmit} className="space-y-6">
 
                 <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
-                    <label htmlFor="q-name" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                    <label htmlFor="q-name" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                       Your Name
                     </label>
                     <input
@@ -84,11 +84,11 @@ const Contact = ({ variant = "contact" }: Props) => {
                       name="name"
                       type="text"
                       required
-                      className="w-full border-0 border-b border-border bg-transparent px-0 py-3 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors duration-200"
+                      className="w-full border-0 border-b border-white/15 bg-transparent px-0 py-3 text-sm text-white placeholder:text-white/35 focus:outline-none focus:border-accent transition-colors duration-200"
                     />
                   </div>
                   <div>
-                    <label htmlFor="q-email" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                    <label htmlFor="q-email" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                       Email
                     </label>
                     <input
@@ -96,38 +96,38 @@ const Contact = ({ variant = "contact" }: Props) => {
                       name="email"
                       type="email"
                       required
-                      className="w-full border-0 border-b border-border bg-transparent px-0 py-3 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors duration-200"
+                      className="w-full border-0 border-b border-white/15 bg-transparent px-0 py-3 text-sm text-white placeholder:text-white/35 focus:outline-none focus:border-accent transition-colors duration-200"
                     />
                   </div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
-                    <label htmlFor="q-phone" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                    <label htmlFor="q-phone" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                       Phone
                     </label>
                     <input
                       id="q-phone"
                       name="phone"
                       type="tel"
-                      className="w-full border-0 border-b border-border bg-transparent px-0 py-3 text-sm text-foreground focus:outline-none focus:border-accent transition-colors duration-200"
+                      className="w-full border-0 border-b border-white/15 bg-transparent px-0 py-3 text-sm text-white focus:outline-none focus:border-accent transition-colors duration-200"
                     />
                   </div>
                   <div>
-                    <label htmlFor="q-mobile" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                    <label htmlFor="q-mobile" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                       Mobile
                     </label>
                     <input
                       id="q-mobile"
                       name="mobile"
                       type="tel"
-                      className="w-full border-0 border-b border-border bg-transparent px-0 py-3 text-sm text-foreground focus:outline-none focus:border-accent transition-colors duration-200"
+                      className="w-full border-0 border-b border-white/15 bg-transparent px-0 py-3 text-sm text-white focus:outline-none focus:border-accent transition-colors duration-200"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="q-subject" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                  <label htmlFor="q-subject" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                     Subject
                   </label>
                   <input
@@ -135,32 +135,32 @@ const Contact = ({ variant = "contact" }: Props) => {
                     name="subject"
                     type="text"
                     required
-                    className="w-full border-0 border-b border-border bg-transparent px-0 py-3 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors duration-200"
+                    className="w-full border-0 border-b border-white/15 bg-transparent px-0 py-3 text-sm text-white placeholder:text-white/35 focus:outline-none focus:border-accent transition-colors duration-200"
                     placeholder="Carpet, vinyl, wet floor."
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="q-message" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
-                    Your Message <span className="text-muted-foreground/60 normal-case font-normal tracking-normal">optional</span>
+                  <label htmlFor="q-message" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
+                    Your Message <span className="text-white/55 normal-case font-normal tracking-normal">optional</span>
                   </label>
                   <textarea
                     id="q-message"
                     name="message"
                     rows={4}
-                    className="w-full border-0 border-b border-border bg-transparent px-0 py-3 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors duration-200 resize-none"
+                    className="w-full border-0 border-b border-white/15 bg-transparent px-0 py-3 text-sm text-white placeholder:text-white/35 focus:outline-none focus:border-accent transition-colors duration-200 resize-none"
                     placeholder="Tell us about the space, room sizes, or anything else."
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  disabled={submitting}
-                  className="inline-flex items-center justify-center w-full sm:w-auto gap-3 bg-accent text-accent-foreground px-10 py-4 text-sm font-semibold font-sans tracking-[0.15em] uppercase rounded-sm transition-all duration-200 hover:opacity-90 disabled:opacity-50 mt-2"
-                >
-                  {submitting ? "Sending." : "Request a Quote"}
-                </button>
-              </form>
+              <button
+                type="submit"
+                disabled={submitting}
+                className="inline-flex items-center justify-center w-full sm:w-auto gap-3 bg-accent text-accent-foreground px-10 py-4 text-sm font-semibold font-sans tracking-[0.15em] uppercase rounded-sm transition-all duration-200 hover:opacity-90 disabled:opacity-50 mt-2 shadow-[0_12px_30px_-18px_rgba(0,0,0,0.85)]"
+              >
+                {submitting ? "Sending." : "Request a Quote"}
+              </button>
+            </form>
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@ const Contact = ({ variant = "contact" }: Props) => {
 
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
-                  <label htmlFor="c-name" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                  <label htmlFor="c-name" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                     Name
                   </label>
                   <input
@@ -228,7 +228,7 @@ const Contact = ({ variant = "contact" }: Props) => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="c-email" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                  <label htmlFor="c-email" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                     Email
                   </label>
                   <input
@@ -242,7 +242,7 @@ const Contact = ({ variant = "contact" }: Props) => {
               </div>
 
               <div>
-                <label htmlFor="c-subject" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                <label htmlFor="c-subject" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                   Subject
                 </label>
                 <input
@@ -255,7 +255,7 @@ const Contact = ({ variant = "contact" }: Props) => {
               </div>
 
               <div>
-                <label htmlFor="c-message" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
+                <label htmlFor="c-message" className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase">
                   Message
                 </label>
                 <textarea
@@ -270,7 +270,7 @@ const Contact = ({ variant = "contact" }: Props) => {
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-3.5 text-sm font-semibold font-sans tracking-[0.15em] uppercase rounded-sm transition-all duration-200 hover:opacity-90 disabled:opacity-50 mt-2"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-accent text-accent-foreground px-8 py-3.5 text-sm font-semibold font-sans tracking-[0.15em] uppercase rounded-sm transition-all duration-200 hover:opacity-90 disabled:opacity-50 mt-2 shadow-[0_12px_30px_-18px_rgba(0,0,0,0.85)]"
               >
                 {submitting ? "Sending." : "Send Message"}
               </button>

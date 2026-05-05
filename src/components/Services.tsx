@@ -63,16 +63,16 @@ const Services = () => {
           {services.map((service) => (
             <div
               key={service.num}
-              className="bg-card p-6 sm:p-7 md:p-9 group transition-colors duration-300 hover:bg-background"
+              className="bg-card p-6 sm:p-7 md:p-9 group transition-colors duration-300 hover:bg-neutral-950 hover:text-white"
             >
               <div className="flex items-start justify-between mb-6">
-                <span className="text-xs text-muted-foreground font-sans tracking-wider font-semibold">{service.num}</span>
+                <span className="text-xs text-muted-foreground font-sans tracking-wider font-semibold group-hover:text-accent">{service.num}</span>
                 <service.icon size={22} className="text-muted-foreground/40 group-hover:text-accent transition-colors duration-300" strokeWidth={1.5} />
               </div>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground mb-3 leading-none">
+              <h3 className="font-display text-2xl md:text-3xl text-foreground mb-3 leading-none group-hover:text-white">
                 {service.title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-white/75">
                 {service.description}
               </p>
             </div>

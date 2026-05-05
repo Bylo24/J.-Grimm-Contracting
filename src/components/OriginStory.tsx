@@ -24,7 +24,7 @@ const OriginStory = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-16 md:mb-20 items-center">
           <div className="lg:col-span-6 order-2 lg:order-1">
-            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-foreground mb-4 block font-sans">
+            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
               Our Story
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] mb-6 text-balance">
@@ -54,7 +54,7 @@ const OriginStory = () => {
           </div>
 
           <div className="lg:col-span-6 order-1 lg:order-2">
-            <div className="relative overflow-hidden rounded-sm bg-muted aspect-[4/5] md:aspect-[5/6]">
+            <div className="relative overflow-hidden rounded-sm bg-neutral-950 aspect-[4/5] md:aspect-[5/6] shadow-[0_25px_60px_-30px_rgba(0,0,0,0.45)]">
               <img
                 src={theBros}
                 alt="James Nutbrown and Brian Black, the team behind 2 Brothers Flooring"
@@ -67,9 +67,9 @@ const OriginStory = () => {
 
         <div className="grid sm:grid-cols-2 gap-px bg-border">
           {bros.map((bro) => (
-            <div key={bro.name} className="bg-card p-6 sm:p-8 md:p-10">
+            <div key={bro.name} className="bg-card p-6 sm:p-8 md:p-10 border border-border/70">
               <div className="flex items-center gap-4 sm:gap-5 mb-5">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary flex items-center justify-center font-display text-xl sm:text-2xl text-primary-foreground">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-neutral-950 flex items-center justify-center font-display text-xl sm:text-2xl text-accent">
                   {bro.initials}
                 </div>
                 <div>

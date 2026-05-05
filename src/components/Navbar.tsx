@@ -12,7 +12,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/40">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/40 shadow-[0_1px_0_rgba(0,0,0,0.04)]">
       <div className="section-container flex items-center justify-between h-14 sm:h-16 md:h-20">
         <a href="/" className="flex items-center gap-3">
           <img src={logo} alt="2 Brothers Flooring Ltd" className="h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 object-contain" />
@@ -34,7 +34,7 @@ const Navbar = () => {
           ))}
           <a
             href="#quote"
-            className="text-sm font-semibold text-primary-foreground bg-primary px-5 py-2.5 rounded-sm transition-all duration-200 hover:opacity-90 tracking-wide uppercase"
+            className="text-sm font-semibold text-accent-foreground bg-accent px-5 py-2.5 rounded-sm transition-all duration-200 hover:opacity-90 tracking-wide uppercase shadow-[0_10px_30px_-16px_rgba(0,0,0,0.6)]"
           >
             Get a Quote
           </a>
@@ -64,7 +64,7 @@ const Navbar = () => {
           <a
             href="#quote"
             onClick={() => setOpen(false)}
-            className="mt-4 block text-center text-sm font-semibold text-primary-foreground bg-primary px-5 py-3.5 rounded-sm uppercase tracking-wide"
+            className="mt-4 block text-center text-sm font-semibold text-accent-foreground bg-accent px-5 py-3.5 rounded-sm uppercase tracking-wide"
           >
             Get a Quote
           </a>
