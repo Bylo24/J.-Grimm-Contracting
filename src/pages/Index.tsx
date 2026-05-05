@@ -16,8 +16,6 @@ const Index = () => {
       <OriginStory />
       <Blog />
       <Testimonials />
-      <Contact variant="quote" />
-      <Contact variant="contact" />
       <Footer />
     </div>
   );
