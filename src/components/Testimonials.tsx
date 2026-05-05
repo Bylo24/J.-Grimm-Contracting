@@ -33,6 +33,21 @@ const reviews = [
   },
 ];
 
+const GoogleBadge = ({ featured = false }: { featured?: boolean }) => (
+  <span className={`inline-flex items-center gap-2 ${featured ? "text-white/55" : "text-muted-foreground"}`}>
+    <span
+      className="relative inline-flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white"
+      aria-hidden="true"
+    >
+      <span className="absolute inset-0 rounded-full bg-[conic-gradient(#4285F4_0_25%,#34A853_25%_50%,#FBBC05_50%_75%,#EA4335_75%_100%)]" />
+      <span className="relative z-10 text-[11px] font-bold leading-none text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]">
+        G
+      </span>
+    </span>
+    <span className="text-[10px] font-semibold uppercase tracking-[0.18em]">Google</span>
+  </span>
+);
+
 const Testimonials = () => {
   return (
     <section id="reviews" className="section-spacing bg-background">
@@ -84,9 +99,9 @@ const Testimonials = () => {
                   <p className={`text-xs font-semibold uppercase tracking-[0.2em] font-sans ${featured ? "text-accent" : "text-muted-foreground"}`}>
                     {review.name}
                   </p>
-                  <p className={`mt-2 text-xs ${featured ? "text-white/55" : "text-muted-foreground"}`}>
-                    Google review
-                  </p>
+                  <div className="mt-2">
+                    <GoogleBadge featured={featured} />
+                  </div>
                 </div>
               </article>
             );

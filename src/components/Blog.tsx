@@ -51,42 +51,48 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="rounded-sm border border-border bg-background/85 p-4 sm:p-5 md:p-6 shadow-[0_25px_80px_rgba(0,0,0,0.08)]">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-5">
-            <div>
-              <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-3 block font-sans">
-                Instagram
-              </span>
-              <h3 className="font-display text-2xl sm:text-3xl md:text-4xl text-foreground leading-[1] text-balance">
-                @2_brothers_flooring_ltd
-              </h3>
+        <div className="grid lg:grid-cols-12 gap-8 items-start">
+          <div className="lg:col-span-5">
+            <div className="rounded-sm border border-border bg-background/85 p-4 sm:p-5 md:p-6 shadow-[0_25px_80px_rgba(0,0,0,0.08)]">
+              <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+                <div>
+                  <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-3 block font-sans">
+                    Instagram
+                  </span>
+                  <h3 className="font-display text-2xl sm:text-3xl md:text-4xl text-foreground leading-[1] text-balance">
+                    @2_brothers_flooring_ltd
+                  </h3>
+                </div>
+                <a
+                  href={instagramProfileUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm font-semibold uppercase tracking-wider text-foreground hover:text-accent transition-colors"
+                >
+                  Open profile
+                </a>
+              </div>
             </div>
-            <a
-              href={instagramProfileUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm font-semibold uppercase tracking-wider text-foreground hover:text-accent transition-colors"
-            >
-              Open profile
-            </a>
           </div>
 
-          <div className="overflow-hidden rounded-sm bg-card">
-            <blockquote
-              className="instagram-media w-full !max-w-none"
-              data-instgrm-permalink={instagramProfileUrl}
-              data-instgrm-version="14"
-              style={{
-                width: "100%",
-                minWidth: "326px",
-                maxWidth: "100%",
-                margin: "0 auto",
-              }}
-            >
-              <a href={instagramProfileUrl} target="_blank" rel="noreferrer">
-                View this profile on Instagram
-              </a>
-            </blockquote>
+          <div className="lg:col-span-7">
+            <div className="overflow-hidden rounded-sm bg-card border border-border shadow-[0_25px_80px_rgba(0,0,0,0.08)] lg:max-w-[680px] lg:ml-auto">
+              <blockquote
+                className="instagram-media w-full !max-w-none"
+                data-instgrm-permalink={instagramProfileUrl}
+                data-instgrm-version="14"
+                style={{
+                  width: "100%",
+                  minWidth: "326px",
+                  maxWidth: "100%",
+                  margin: "0 auto",
+                }}
+              >
+                <a href={instagramProfileUrl} target="_blank" rel="noreferrer">
+                  View this profile on Instagram
+                </a>
+              </blockquote>
+            </div>
           </div>
         </div>
       </div>

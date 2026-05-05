@@ -13,6 +13,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/55 to-black/35" />
         <div className="absolute inset-0 bg-black/5" />
+        <div className="absolute inset-0 bg-black/20 sm:hidden" />
       </div>
 
       <div className="section-container w-full relative z-10">
