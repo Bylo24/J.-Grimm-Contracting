@@ -4,12 +4,12 @@ import Services from "@/components/Services";
 import OriginStory from "@/components/OriginStory";
 import Blog from "@/components/Blog";
 import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import MobileStickyBar from "@/components/MobileStickyBar";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-24 sm:pb-0">
       <Navbar />
       <Hero />
       <Services />
@@ -17,6 +17,7 @@ const Index = () => {
       <Blog />
       <Testimonials />
       <Footer />
+      <MobileStickyBar />
     </div>
   );
 };
