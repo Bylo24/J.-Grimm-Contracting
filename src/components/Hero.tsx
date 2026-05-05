@@ -18,9 +18,7 @@ const Hero = () => {
 
       <div className="section-container w-full relative z-10">
         <div className="max-w-4xl">
-          <div className="reveal-up">
-          </div>
-          <h1 className="reveal-up delay-100 font-display text-4xl sm:text-5xl md:text-6xl lg:text-[5.75rem] leading-[0.92] text-background mb-5 text-balance max-w-3xl">
+          <h1 className="reveal-up delay-100 mt-3 sm:mt-4 lg:mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-[5.75rem] leading-[0.92] text-background mb-5 text-balance max-w-3xl">
             A family business created by exactly that, 2 Brothers.
           </h1>
           <p className="reveal-up delay-200 text-sm sm:text-base md:text-lg lg:text-xl text-background leading-relaxed max-w-2xl mb-6 sm:mb-8 font-light">
