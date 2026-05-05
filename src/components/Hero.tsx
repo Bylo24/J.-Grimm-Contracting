@@ -2,7 +2,7 @@ import heroImage from "@/assets/hero-flooring.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative isolate min-h-[90svh] flex items-end pt-28 sm:pt-32 md:pt-36 lg:pt-40 pb-20 md:pb-24 overflow-hidden bg-neutral-950">
+    <section className="relative isolate min-h-[82svh] lg:min-h-[78svh] flex items-end pt-28 sm:pt-32 md:pt-36 lg:pt-32 pb-16 md:pb-20 overflow-hidden bg-neutral-950">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img
           src={heroImage}
@@ -22,13 +22,18 @@ const Hero = () => {
               Whanganui. Manawatu. Family Owned.
             </span>
           </div>
-          <h1 className="reveal-up delay-100 font-display text-4xl sm:text-5xl md:text-6xl lg:text-[7.25rem] leading-[0.92] text-background mb-7 text-balance">
-            Flooring for homes,<br />
-            <span className="text-background italic">businesses, and beyond.</span>
+          <h1 className="reveal-up delay-100 font-display text-4xl sm:text-5xl md:text-6xl lg:text-[5.75rem] leading-[0.92] text-background mb-6 text-balance max-w-3xl">
+            A family business created by exactly that 2 Brothers.
           </h1>
-          <p className="reveal-up delay-200 text-base sm:text-lg md:text-xl text-background leading-relaxed max-w-2xl mb-8 sm:mb-10 font-light">
-            A family business created by exactly that, 2 brothers. Specialists in carpet and vinyl with
-            unbeatable communication and unbeatable customer service.
+          <p className="reveal-up delay-200 text-sm sm:text-base md:text-lg lg:text-xl text-background leading-relaxed max-w-2xl mb-7 sm:mb-9 font-light">
+            After working in many industries for the last 20 years and doing 40/70 hour weeks, we wanted
+            to create a company of our own and satisfy our career of running our own company, based on
+            precision flooring, specialists in carpet and vinyl.
+            <br />
+            <span className="block mt-4">
+              Unbeatable communication, unbeatable customer service! We spent 10 years building the best
+              name in the business.
+            </span>
           </p>
           <div className="reveal-up delay-300 flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
             <a
