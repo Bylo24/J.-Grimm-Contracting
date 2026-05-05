@@ -24,8 +24,8 @@
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 35%;
 
-    --accent: 42 78% 49%;
-    --accent-foreground: 0 0% 6%;
+    --accent: 0 0% 6%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 74% 48%;
     --destructive-foreground: 0 0% 100%;
@@ -37,7 +37,7 @@
     --radius: 0.375rem;
 
     --trust: 0 0% 6%;
-    --insight: 42 78% 49%;
+    --insight: 0 0% 6%;
     --signal: 8 72% 45%;
     --surface: 0 0% 100%;
     --surface-dark: 0 0% 4%;
@@ -65,7 +65,7 @@
     --secondary-foreground: 0 0% 96%;
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 68%;
-    --accent: 42 78% 49%;
+    --accent: 0 0% 96%;
     --accent-foreground: 0 0% 6%;
     --destructive: 0 78% 52%;
     --destructive-foreground: 0 0% 100%;

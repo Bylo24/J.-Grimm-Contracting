@@ -69,7 +69,7 @@ const OriginStory = () => {
           {bros.map((bro) => (
             <div key={bro.name} className="bg-card p-6 sm:p-8 md:p-10 border border-border/70">
               <div className="flex items-center gap-4 sm:gap-5 mb-5">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-neutral-950 flex items-center justify-center font-display text-xl sm:text-2xl text-accent">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-neutral-950 flex items-center justify-center font-display text-xl sm:text-2xl text-white">
                   {bro.initials}
                 </div>
                 <div>

@@ -78,12 +78,12 @@ const Testimonials = () => {
                 key={review.name}
                 className={`relative overflow-hidden rounded-2xl border ${
                   featured
-                    ? "border-accent/40 bg-neutral-950 text-white shadow-[0_20px_60px_-30px_rgba(0,0,0,0.45)]"
+                    ? "border-white/10 bg-neutral-950 text-white shadow-[0_20px_60px_-30px_rgba(0,0,0,0.45)]"
                     : "border-border bg-card"
                 } p-6 sm:p-7 transition-transform duration-300 hover:-translate-y-0.5`}
               >
                 <div className="flex items-center justify-between gap-4 mb-5">
-                  <div className={`flex items-center gap-1 ${featured ? "text-accent" : "text-accent"}`}>
+                  <div className={`flex items-center gap-1 ${featured ? "text-white" : "text-accent"}`}>
                     {Array.from({ length: 5 }).map((_, starIndex) => (
                       <Star key={starIndex} size={14} fill="currentColor" strokeWidth={0} />
                     ))}
@@ -96,7 +96,7 @@ const Testimonials = () => {
                 </p>
 
                 <div className={`mt-6 pt-5 border-t ${featured ? "border-white/10" : "border-border"}`}>
-                  <p className={`text-xs font-semibold uppercase tracking-[0.2em] font-sans ${featured ? "text-accent" : "text-muted-foreground"}`}>
+                  <p className={`text-xs font-semibold uppercase tracking-[0.2em] font-sans ${featured ? "text-white" : "text-muted-foreground"}`}>
                     {review.name}
                   </p>
                   <div className="mt-2">

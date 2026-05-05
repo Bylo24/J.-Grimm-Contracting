@@ -39,7 +39,7 @@ const Contact = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-5">
-            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
+            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-foreground mb-4 block font-sans">
               Get a Quote
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] mb-6 text-balance">
@@ -57,7 +57,7 @@ const Contact = () => {
 
             <div className="space-y-7">
               <div className="flex items-start gap-4">
-                <MapPin size={18} className="text-accent mt-1 shrink-0" strokeWidth={1.5} />
+                <MapPin size={18} className="text-foreground mt-1 shrink-0" strokeWidth={1.5} />
                 <div>
                   <p className="text-xs font-semibold text-foreground font-sans tracking-[0.2em] uppercase">
                     2 Brothers Flooring Ltd
@@ -77,8 +77,8 @@ const Contact = () => {
                   Director and Operations
                 </p>
                 <a href="tel:+64275861915" className="flex items-center gap-3 group">
-                  <Phone size={16} className="text-accent shrink-0" strokeWidth={1.5} />
-                  <span className="text-foreground group-hover:text-accent transition-colors">
+                  <Phone size={16} className="text-foreground shrink-0" strokeWidth={1.5} />
+                  <span className="text-foreground group-hover:text-foreground transition-colors">
                     027 586 1915
                   </span>
                 </a>
@@ -99,7 +99,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="q-name"
-                    className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase"
+                    className="block text-xs font-semibold text-white mb-2 font-sans tracking-[0.15em] uppercase"
                   >
                     Your Name
                   </label>
@@ -114,7 +114,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="q-email"
-                    className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase"
+                    className="block text-xs font-semibold text-white mb-2 font-sans tracking-[0.15em] uppercase"
                   >
                     Email
                   </label>
@@ -132,7 +132,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="q-phone"
-                    className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase"
+                    className="block text-xs font-semibold text-white mb-2 font-sans tracking-[0.15em] uppercase"
                   >
                     Phone
                   </label>
@@ -146,7 +146,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="q-mobile"
-                    className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase"
+                    className="block text-xs font-semibold text-white mb-2 font-sans tracking-[0.15em] uppercase"
                   >
                     Mobile
                   </label>
@@ -162,7 +162,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="q-subject"
-                  className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase"
+                  className="block text-xs font-semibold text-white mb-2 font-sans tracking-[0.15em] uppercase"
                 >
                   Subject
                 </label>
@@ -179,7 +179,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="q-message"
-                  className="block text-xs font-semibold text-accent mb-2 font-sans tracking-[0.15em] uppercase"
+                  className="block text-xs font-semibold text-white mb-2 font-sans tracking-[0.15em] uppercase"
                 >
                   Your Message <span className="text-white/55 normal-case font-normal tracking-normal">optional</span>
                 </label>

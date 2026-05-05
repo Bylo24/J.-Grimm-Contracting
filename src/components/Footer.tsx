@@ -10,7 +10,7 @@ const Footer = () => {
               <img src={logo} alt="2 Brothers Flooring Ltd" className="h-14 w-14 object-contain" />
               <div className="flex items-baseline gap-2">
                 <span className="font-display text-2xl text-white leading-none">2 Brothers</span>
-                <span className="font-display text-base text-accent leading-none">Flooring</span>
+                <span className="font-display text-base text-white/80 leading-none">Flooring</span>
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed max-w-sm">
@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="md:col-span-3 md:col-start-7">
-            <p className="text-xs font-semibold text-accent mb-4 font-sans tracking-[0.2em] uppercase">Navigate</p>
+            <p className="text-xs font-semibold text-white mb-4 font-sans tracking-[0.2em] uppercase">Navigate</p>
             <div className="space-y-2.5">
               {[
                 { label: "Meet The Bros", href: "#bros" },
@@ -30,7 +30,7 @@ const Footer = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block text-sm text-white/70 hover:text-accent transition-colors duration-200"
+                  className="block text-sm text-white/70 hover:text-white transition-colors duration-200"
                 >
                   {link.label}
                 </a>
@@ -38,9 +38,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:col-span-3 md:col-start-10">
-            <p className="text-xs font-semibold text-accent mb-4 font-sans tracking-[0.2em] uppercase">Contact</p>
+            <p className="text-xs font-semibold text-white mb-4 font-sans tracking-[0.2em] uppercase">Contact</p>
             <div className="space-y-2.5 text-sm text-white/70">
-              <a href="tel:+64275861915" className="block hover:text-accent transition-colors duration-200">
+              <a href="tel:+64275861915" className="block hover:text-white transition-colors duration-200">
                 027 586 1915
               </a>
               <p className="text-xs leading-relaxed pt-1">
@@ -61,7 +61,7 @@ const Footer = () => {
               href="https://brightframe.media"
               target="_blank"
               rel="noreferrer"
-              className="underline underline-offset-4 hover:text-accent transition-colors duration-200"
+              className="underline underline-offset-4 hover:text-white transition-colors duration-200"
             >
               Brightframe Media
             </a>
