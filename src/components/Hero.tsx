@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="max-w-4xl">
           <div className="reveal-up">
             <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-background/80 mb-6 font-sans">
-              Whanganui · Manawatu · Family Owned
+              Whanganui. Manawatu. Family Owned.
             </span>
           </div>
           <h1 className="reveal-up delay-100 font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-background mb-8">
@@ -26,7 +26,7 @@ const Hero = () => {
             <span className="text-background/70 italic">we can lay it.</span>
           </h1>
           <p className="reveal-up delay-200 text-lg md:text-xl text-background/85 leading-relaxed max-w-2xl mb-10 font-light">
-            A family business built by 2 brothers. Specialists in carpet, vinyl and wet floors with
+            A family business created by exactly that, 2 brothers. Specialists in carpet and vinyl with
             unbeatable communication and unbeatable customer service.
           </p>
           <div className="reveal-up delay-300 flex flex-wrap gap-4">
@@ -46,9 +46,9 @@ const Hero = () => {
         </div>
 
         <div className="reveal-up delay-500 mt-16 md:mt-24 pt-6 border-t border-background/20 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 text-xs text-background/70 tracking-[0.2em] uppercase">
-          <span>20+ Years Experience</span>
-          <span>Carpet · Vinyl · Wet Floors</span>
-          <span>No Sad Stories. Just Satisfied Customers.</span>
+          <span>20 Years Experience</span>
+          <span>Carpet, Vinyl, Wet Floors</span>
+          <span>No Sad Stories, Just Satisfied Customers</span>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import theBros from "@/assets/team.jpg";
 const bros = [
   {
     name: "James Nutbrown",
-    role: "Director & Operations",
+    role: "Director and Operations",
     phone: "027 586 1915",
     phoneHref: "tel:+64275861915",
     initials: "JN",
@@ -33,21 +33,22 @@ const OriginStory = () => {
             <div className="gold-line mb-8" />
             <div className="space-y-5 text-muted-foreground leading-[1.8] text-base">
               <p>
-                A family business created by exactly that — 2 brothers. After 20 years working in the
-                industry on 40 to 70 hour weeks, we set out to build something of our own, founded on
-                <span className="text-foreground font-medium"> precision flooring</span>, with carpet and
-                vinyl as our specialty.
+                A family business created by exactly that, 2 brothers. After working in many industries
+                for the last 20 years and doing 40 to 70 hour weeks, we wanted to create a company of our
+                own and satisfy our career of running our own company, based on
+                <span className="text-foreground font-medium"> precision flooring</span>, specialists in
+                carpet and vinyl.
               </p>
               <p>
-                Unbeatable communication. Unbeatable customer service. We spent 10 years building the best
+                Unbeatable communication, unbeatable customer service. We spent 10 years building the best
                 name in the business, and we treat every customer like family.
               </p>
             </div>
 
             <div className="mt-10 pt-6 border-t border-border">
               <blockquote className="font-display text-3xl md:text-4xl text-foreground leading-tight">
-                &ldquo;No sad stories.<br />
-                Just satisfied customers.&rdquo;
+                No sad stories.<br />
+                Just satisfied customers.
               </blockquote>
               <div className="mt-4 flex items-center gap-3">
                 <div className="w-8 h-px bg-foreground" />

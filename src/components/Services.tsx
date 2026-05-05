@@ -10,8 +10,8 @@ const services = [
   {
     num: "02",
     icon: Layers,
-    title: "Vinyl & Vinyl Planks",
-    description: "Sheet vinyl, glue-down planks and herringbone styles. Durable, modern and built to last.",
+    title: "Vinyl and Vinyl Planks",
+    description: "Sheet vinyl, glue down planks and herringbone styles. Durable, modern and built to last.",
   },
   {
     num: "03",
@@ -23,19 +23,19 @@ const services = [
     num: "04",
     icon: Building2,
     title: "Commercial Installations",
-    description: "Cafés, gyms, offices, salons. Sharp, clean commercial finishes with minimal disruption.",
+    description: "Cafes, gyms, offices, salons. Sharp, clean commercial finishes with minimal disruption.",
   },
   {
     num: "05",
     icon: Wrench,
-    title: "Subfloors & Repairs",
+    title: "Subfloors and Repairs",
     description: "Full floor prep, new subfloors and repairs. We strip it back and do it the right way the first time.",
   },
   {
     num: "06",
     icon: Package,
     title: "Full Supply",
-    description: "7,000+ products available. Carpet, vinyl, cork, needle punch, tiger turf — tried and tested by our team.",
+    description: "Thousands of products available. Carpet, vinyl, cork, needle punch, tiger turf, all tried and tested by our team.",
   },
 ];
 
@@ -49,12 +49,12 @@ const Services = () => {
               What We Do
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1]">
-              Specialists in every floor
+              Specialists in every floor.
             </h2>
           </div>
           <div className="lg:col-span-5 lg:col-start-8 flex items-end">
             <p className="text-muted-foreground leading-relaxed text-base">
-              Big job or small, domestic or commercial — if it has a floor, we can lay it. Every quote is
+              Big job or small, domestic or commercial, if it has a floor we can lay it. Every quote is
               free and under no obligation.
             </p>
           </div>
