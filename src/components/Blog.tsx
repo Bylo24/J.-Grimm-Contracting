@@ -57,7 +57,7 @@ const Blog = () => {
             <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
               Our Work
             </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] text-balance">
               The proof is on the floor.
             </h2>
           </div>
@@ -86,7 +86,7 @@ const Blog = () => {
                 <span className="inline-block border border-border px-3 py-1 text-[10px] font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-5">
                   {featured.category}
                 </span>
-                <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1] mb-4">
+                <h3 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1] mb-4 text-balance">
                   {featured.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-6 text-base">
@@ -118,7 +118,7 @@ const Blog = () => {
                 <span className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground font-semibold">
                   {project.category}
                 </span>
-                <h3 className="font-display text-2xl md:text-3xl text-foreground leading-none mt-2 mb-2 group-hover:text-accent transition-colors duration-300">
+                <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground leading-none mt-2 mb-2 group-hover:text-accent transition-colors duration-300 text-balance">
                   {project.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

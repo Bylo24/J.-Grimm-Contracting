@@ -48,7 +48,7 @@ const Services = () => {
             <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
               What We Do
             </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] text-balance">
               Specialists in every floor.
             </h2>
           </div>
@@ -63,7 +63,7 @@ const Services = () => {
           {services.map((service) => (
             <div
               key={service.num}
-              className="bg-card p-7 md:p-9 group transition-colors duration-300 hover:bg-background"
+              className="bg-card p-6 sm:p-7 md:p-9 group transition-colors duration-300 hover:bg-background"
             >
               <div className="flex items-start justify-between mb-6">
                 <span className="text-xs text-muted-foreground font-sans tracking-wider font-semibold">{service.num}</span>

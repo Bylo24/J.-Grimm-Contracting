@@ -27,11 +27,11 @@ const OriginStory = () => {
             <span className="text-xs font-semibold tracking-[0.25em] uppercase text-foreground mb-4 block font-sans">
               Our Story
             </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] mb-6 text-balance">
               Meet The Bros.
             </h2>
             <div className="gold-line mb-8" />
-            <div className="space-y-5 text-muted-foreground leading-[1.8] text-base">
+            <div className="space-y-5 text-muted-foreground leading-[1.75] text-sm sm:text-base">
               <p>
                 A family business created by exactly that, 2 brothers. After working in many industries
                 for the last 20 years and doing 40 to 70 hour weeks, we wanted to create a company of our
@@ -46,7 +46,7 @@ const OriginStory = () => {
             </div>
 
             <div className="mt-10 pt-6 border-t border-border">
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xl">
                 We bring the same attention to detail to every project, from first quote through to final
                 install and clean-up.
               </p>
@@ -67,13 +67,13 @@ const OriginStory = () => {
 
         <div className="grid sm:grid-cols-2 gap-px bg-border">
           {bros.map((bro) => (
-            <div key={bro.name} className="bg-card p-8 md:p-10">
-              <div className="flex items-center gap-5 mb-5">
-                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center font-display text-2xl text-primary-foreground">
+            <div key={bro.name} className="bg-card p-6 sm:p-8 md:p-10">
+              <div className="flex items-center gap-4 sm:gap-5 mb-5">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary flex items-center justify-center font-display text-xl sm:text-2xl text-primary-foreground">
                   {bro.initials}
                 </div>
                 <div>
-                  <h3 className="font-display text-2xl md:text-3xl text-foreground leading-none">
+                  <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground leading-none">
                     {bro.name}
                   </h3>
                   <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-2 font-sans font-semibold">

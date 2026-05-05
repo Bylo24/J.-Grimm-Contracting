@@ -46,21 +46,21 @@ const Contact = ({ variant = "contact" }: Props) => {
     return (
       <section id="quote" className="section-spacing bg-card scroll-mt-24">
         <div className="section-container">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
             <div className="lg:col-span-5">
               <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
                 Get a Quote
               </span>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] mb-6">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] mb-6 text-balance">
                 Turn dreams into reality.
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8 text-base">
+              <p className="text-muted-foreground leading-relaxed mb-8 text-sm sm:text-base">
                 We are a reputable registered company at 2 Brothers Flooring Ltd and we turn dreams into
                 a reality. All our quotes are
                 <span className="text-foreground font-medium"> free</span> and we offer full supply with the
                 most competitive prices in the industry.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-10 text-base">
+              <p className="text-muted-foreground leading-relaxed mb-10 text-sm sm:text-base">
                 We love our work with pride and focus on quality results for every space.
               </p>
 
@@ -74,10 +74,10 @@ const Contact = ({ variant = "contact" }: Props) => {
               </div>
             </div>
 
-            <div className="lg:col-span-6 lg:col-start-7 bg-background p-8 md:p-10 rounded-sm border border-border">
+            <div className="lg:col-span-6 lg:col-start-7 bg-background p-6 sm:p-8 md:p-10 rounded-sm border border-border">
               <form onSubmit={handleSubmit} className="space-y-6">
 
-                <div className="grid sm:grid-cols-2 gap-6">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="q-name" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
                       Your Name
@@ -104,7 +104,7 @@ const Contact = ({ variant = "contact" }: Props) => {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-6">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="q-phone" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
                       Phone
@@ -174,15 +174,15 @@ const Contact = ({ variant = "contact" }: Props) => {
   return (
     <section id="contact" className="section-spacing">
       <div className="section-container">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-5">
             <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
               Contact
             </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] mb-6 text-balance">
               Get in touch.
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-12 text-base">
+            <p className="text-muted-foreground leading-relaxed mb-10 lg:mb-12 text-sm sm:text-base">
               Don&apos;t delay, call today. The team is ready to chat about your project, big or small.
             </p>
 
@@ -217,7 +217,7 @@ const Contact = ({ variant = "contact" }: Props) => {
           <div className="lg:col-span-6 lg:col-start-7">
             <form onSubmit={handleSubmit} className="space-y-6">
 
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="c-name" className="block text-xs font-semibold text-foreground mb-2 font-sans tracking-[0.15em] uppercase">
                     Name
@@ -273,7 +273,7 @@ const Contact = ({ variant = "contact" }: Props) => {
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-3.5 text-sm font-semibold font-sans tracking-[0.15em] uppercase rounded-sm transition-all duration-200 hover:opacity-90 disabled:opacity-50 mt-2"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-3.5 text-sm font-semibold font-sans tracking-[0.15em] uppercase rounded-sm transition-all duration-200 hover:opacity-90 disabled:opacity-50 mt-2"
               >
                 {submitting ? "Sending." : "Send Message"}
               </button>
