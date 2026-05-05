@@ -17,13 +17,13 @@ const Hero = () => {
       <div className="section-container w-full relative">
         <div className="max-w-4xl">
           <div className="reveal-up">
-            <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-6 font-sans">
+            <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-background/80 mb-6 font-sans">
               Whanganui · Manawatu · Family Owned
             </span>
           </div>
           <h1 className="reveal-up delay-100 font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-background mb-8">
             If it&apos;s got a floor,<br />
-            <span className="text-accent">we can lay it.</span>
+            <span className="text-background/70 italic">we can lay it.</span>
           </h1>
           <p className="reveal-up delay-200 text-lg md:text-xl text-background/85 leading-relaxed max-w-2xl mb-10 font-light">
             A family business built by 2 brothers. Specialists in carpet, vinyl and wet floors with
@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="reveal-up delay-300 flex flex-wrap gap-4">
             <a
               href="#quote"
-              className="inline-flex items-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-sm font-semibold tracking-wider uppercase rounded-sm transition-all duration-200 hover:opacity-90"
+              className="inline-flex items-center gap-3 bg-background text-foreground px-8 py-4 text-sm font-semibold tracking-wider uppercase rounded-sm transition-all duration-200 hover:opacity-90"
             >
               Request a Quote
             </a>
