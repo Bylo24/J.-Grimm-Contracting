@@ -39,7 +39,7 @@ const Hero = () => {
               Request a Quote
             </a>
             <a
-              href="#contact"
+              href="#quote"
               className="inline-flex w-full sm:w-auto items-center justify-center gap-3 border border-background text-background px-8 py-4 text-sm font-semibold tracking-wider uppercase rounded-sm transition-all duration-200 hover:bg-background/10"
             >
               Contact Us

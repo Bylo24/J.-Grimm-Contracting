@@ -5,7 +5,7 @@ import logo from "@/assets/logo.png";
 const navLinks = [
   { label: "Meet The Bros", href: "#bros" },
   { label: "Our Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "#quote" },
 ];
 
 const Navbar = () => {
