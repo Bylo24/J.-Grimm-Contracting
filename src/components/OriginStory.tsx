@@ -1,5 +1,5 @@
 import { Phone } from "lucide-react";
-import theBros from "@/assets/team.jpg";
+import theBros from "../../TeamPhoto.png";
 
 const bros = [
   {
@@ -46,14 +46,10 @@ const OriginStory = () => {
             </div>
 
             <div className="mt-10 pt-6 border-t border-border">
-              <blockquote className="font-display text-3xl md:text-4xl text-foreground leading-tight">
-                If it has a floor,<br />
-                we can lay it.
-              </blockquote>
-              <div className="mt-4 flex items-center gap-3">
-                <div className="w-8 h-px bg-foreground" />
-                <span className="text-sm text-muted-foreground font-sans">James Nutbrown, Director</span>
-              </div>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl">
+                We bring the same attention to detail to every project, from first quote through to final
+                install and clean-up.
+              </p>
             </div>
           </div>
 

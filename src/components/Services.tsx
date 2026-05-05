@@ -54,8 +54,7 @@ const Services = () => {
           </div>
           <div className="lg:col-span-5 lg:col-start-8 flex items-end">
             <p className="text-muted-foreground leading-relaxed text-base">
-              Big job or small, domestic or commercial, if it has a floor we can lay it. Every quote is
-              free and under no obligation.
+              Big job or small, domestic or commercial, every quote is free and under no obligation.
             </p>
           </div>
         </div>

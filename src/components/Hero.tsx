@@ -2,8 +2,8 @@ import heroImage from "@/assets/hero-flooring.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[92vh] flex items-end pt-24 pb-16 md:pb-24 overflow-hidden">
-      <div className="absolute inset-0 -z-10">
+    <section className="relative isolate min-h-[92vh] flex items-end pt-24 pb-16 md:pb-24 overflow-hidden bg-neutral-950">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <img
           src={heroImage}
           alt="Newly installed timber-look vinyl flooring in a modern New Zealand home"
@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/55 to-foreground/30" />
       </div>
 
-      <div className="section-container w-full relative">
+      <div className="section-container w-full relative z-10">
         <div className="max-w-4xl">
           <div className="reveal-up">
             <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-background/80 mb-6 font-sans">
@@ -22,8 +22,8 @@ const Hero = () => {
             </span>
           </div>
           <h1 className="reveal-up delay-100 font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-background mb-8">
-            If it&apos;s got a floor,<br />
-            <span className="text-background/70 italic">we can lay it.</span>
+            Flooring for homes,<br />
+            <span className="text-background/70 italic">businesses, and beyond.</span>
           </h1>
           <p className="reveal-up delay-200 text-lg md:text-xl text-background/85 leading-relaxed max-w-2xl mb-10 font-light">
             A family business created by exactly that, 2 brothers. Specialists in carpet and vinyl with

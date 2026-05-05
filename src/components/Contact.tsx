@@ -61,7 +61,7 @@ const Contact = ({ variant = "contact" }: Props) => {
                 most competitive prices in the industry.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-10 text-base">
-                If it has a floor we can lay it. We love our work with pride and you will too.
+                We love our work with pride and focus on quality results for every space.
               </p>
 
               <div className="space-y-5 pt-6 border-t border-border">

@@ -15,10 +15,7 @@ const Footer = () => {
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
               A family run flooring company specialising in carpet, vinyl and wet floors across Whanganui
-              and Manawatu. If it has a floor, we can lay it.
-            </p>
-            <p className="text-xs text-foreground mt-5 tracking-[0.2em] uppercase font-semibold">
-              If it has a floor, we can lay it.
+              and Manawatu.
             </p>
           </div>
           <div className="md:col-span-3 md:col-start-7">
