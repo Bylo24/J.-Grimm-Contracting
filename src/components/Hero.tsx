@@ -1,35 +1,54 @@
+import heroImage from "@/assets/hero-flooring.jpg";
+
 const Hero = () => {
   return (
-    <section className="min-h-[84vh] md:min-h-[90vh] flex items-end pb-12 md:pb-20 pt-24 md:pt-20">
-      <div className="section-container w-full">
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end">
-          <div className="lg:col-span-8">
-            <div className="reveal-up">
-              <div className="gold-line mb-8" />
-            </div>
-            <h1 className="reveal-up delay-100 font-display text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-[-0.02em] text-foreground">
-              Simplified web design{" "}
-              <em className="text-muted-foreground">and tech consulting</em>{" "}
-              for businesses ready to work differently<span className="text-signal">.</span>
-            </h1>
+    <section className="relative min-h-[92vh] flex items-end pt-24 pb-16 md:pb-24 overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <img
+          src={heroImage}
+          alt="Newly installed timber-look vinyl flooring in a modern New Zealand home"
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/55 to-foreground/30" />
+      </div>
+
+      <div className="section-container w-full relative">
+        <div className="max-w-4xl">
+          <div className="reveal-up">
+            <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-6 font-sans">
+              Whanganui · Manawatu · Family Owned
+            </span>
           </div>
-          <div className="lg:col-span-4 lg:pb-2">
-            <p className="reveal-up delay-300 text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              We help small businesses spot digital bottlenecks, simplify operations, and build smarter web systems.
-            </p>
+          <h1 className="reveal-up delay-100 font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-background mb-8">
+            If it&apos;s got a floor,<br />
+            <span className="text-accent">we can lay it.</span>
+          </h1>
+          <p className="reveal-up delay-200 text-lg md:text-xl text-background/85 leading-relaxed max-w-2xl mb-10 font-light">
+            A family business built by 2 brothers. Specialists in carpet, vinyl and wet floors with
+            unbeatable communication and unbeatable customer service.
+          </p>
+          <div className="reveal-up delay-300 flex flex-wrap gap-4">
+            <a
+              href="#quote"
+              className="inline-flex items-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-sm font-semibold tracking-wider uppercase rounded-sm transition-all duration-200 hover:opacity-90"
+            >
+              Request a Quote
+            </a>
             <a
               href="#contact"
-              className="reveal-up delay-400 inline-flex items-center gap-3 text-sm font-medium text-foreground link-underline pb-0.5 group"
+              className="inline-flex items-center gap-3 border border-background/40 text-background px-8 py-4 text-sm font-semibold tracking-wider uppercase rounded-sm transition-all duration-200 hover:bg-background/10"
             >
-              Start a conversation
+              Contact Us
             </a>
           </div>
         </div>
 
-        <div className="reveal-up delay-500 mt-12 md:mt-20 pt-6 border-t border-border flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 text-xs text-muted-foreground tracking-wide uppercase">
-          <span>Ottawa, Canada</span>
-          <span>Web Design, Consulting</span>
-          <span>Clarity after complexity</span>
+        <div className="reveal-up delay-500 mt-16 md:mt-24 pt-6 border-t border-background/20 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 text-xs text-background/70 tracking-[0.2em] uppercase">
+          <span>20+ Years Experience</span>
+          <span>Carpet · Vinyl · Wet Floors</span>
+          <span>No Sad Stories. Just Satisfied Customers.</span>
         </div>
       </div>
     </section>

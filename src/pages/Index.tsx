@@ -14,9 +14,10 @@ const Index = () => {
       <Hero />
       <Services />
       <OriginStory />
-      <BookingPlaceholder />
       <Blog />
-      <Contact />
+      <BookingPlaceholder />
+      <Contact variant="quote" />
+      <Contact variant="contact" />
       <Footer />
     </div>
   );
