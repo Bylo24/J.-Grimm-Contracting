@@ -10,38 +10,38 @@ const projects = [
     image: workVinyl,
     category: "Vinyl Planks",
     title: "Herringbone Kitchen Install",
-    description: "Premium vinyl planks in a herringbone style — full supply and installation with a flawless modern finish.",
+    description: "Premium vinyl planks in a herringbone style, full supply and installation with a flawless modern finish.",
     featured: true,
   },
   {
     image: workCarpet,
     category: "Carpet",
     title: "Belgotex 55oz Nylon Lounge",
-    description: "Premium wool-blend carpet installed in a family living space.",
+    description: "High quality Belgotex 55oz nylon carpet with sleepyhead underlay, supplied and installed for a family home.",
   },
   {
     image: workWetfloor,
     category: "Wet Floors",
-    title: "Slip-Resistant Bathroom",
-    description: "Full bathroom wet floor with slip-resistant wear layer.",
+    title: "Slip Resistant Bathroom",
+    description: "Full bathroom wet floor with a slip resistant wear layer, safer for everyday use.",
   },
   {
     image: workCommercial,
     category: "Commercial",
-    title: "Café Vinyl Fit-Out",
-    description: "Sharp commercial vinyl across customer-facing café spaces.",
+    title: "Cafe Vinyl Fit Out",
+    description: "Sharp commercial vinyl across customer facing cafe spaces.",
   },
   {
     image: workStairs,
-    category: "Stairs & Hallways",
+    category: "Stairs and Hallways",
     title: "Westminster Stair Runner",
-    description: "Poetry in motion — staircase and hallway with premium carpet.",
+    description: "Poetry in motion, a staircase and hallway finished with premium carpet.",
   },
   {
     image: workGarage,
     category: "Garage",
     title: "Needle Punch Garage Carpet",
-    description: "Hard-wearing needle punch carpet — perfect for the man (or woman) cave.",
+    description: "Hard wearing needle punch carpet, perfect for the man or woman cave.",
   },
 ];
 
@@ -63,8 +63,8 @@ const Blog = () => {
           </div>
           <div className="lg:col-span-4 lg:col-start-9 flex items-end">
             <p className="text-muted-foreground leading-relaxed text-base">
-              Over the years we have completed hundreds of projects across Whanganui and Manawatu —
-              domestic, commercial and everything in between.
+              Over the years we have successfully completed a wide range of flooring projects across
+              Whanganui and Manawatu. Check out some of the examples in the gallery.
             </p>
           </div>
         </div>

@@ -14,11 +14,11 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-              A family-run flooring company specialising in carpet, vinyl and wet floors across Whanganui
+              A family run flooring company specialising in carpet, vinyl and wet floors across Whanganui
               and Manawatu. If it has a floor, we can lay it.
             </p>
             <p className="text-xs text-foreground mt-5 tracking-[0.2em] uppercase font-semibold">
-              No sad stories. Just satisfied customers.
+              No sad stories, just satisfied customers.
             </p>
           </div>
           <div className="md:col-span-3 md:col-start-7">
@@ -48,16 +48,16 @@ const Footer = () => {
               </a>
               <p className="text-xs leading-relaxed pt-1">
                 James Nutbrown<br />
-                Director / Operations
+                Director and Operations
               </p>
               <p className="text-xs leading-relaxed pt-2">
-                Whanganui &amp; Manawatu<br />New Zealand
+                Whanganui and Manawatu<br />New Zealand
               </p>
             </div>
           </div>
         </div>
         <div className="mt-14 pt-6 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} 2 Brothers Flooring Ltd. All rights reserved.</span>
+          <span>{new Date().getFullYear()} 2 Brothers Flooring Ltd. All rights reserved.</span>
           <span className="text-muted-foreground/70">
             Built by{" "}
             <a
