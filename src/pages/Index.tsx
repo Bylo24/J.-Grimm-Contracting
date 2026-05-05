@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import OriginStory from "@/components/OriginStory";
 import Blog from "@/components/Blog";
 import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <OriginStory />
       <Blog />
       <Testimonials />
+      <Contact />
       <Footer />
       <MobileStickyBar />
     </div>
