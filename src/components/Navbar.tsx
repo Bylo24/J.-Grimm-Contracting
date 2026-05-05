@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Meet The Bros", href: "#bros" },
@@ -13,9 +14,12 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/40">
       <div className="section-container flex items-center justify-between h-16 md:h-20">
-        <a href="/" className="flex items-baseline gap-2">
-          <span className="font-display text-2xl md:text-3xl text-foreground leading-none">2 Brothers</span>
-          <span className="font-display text-base md:text-lg text-accent leading-none">Flooring</span>
+        <a href="/" className="flex items-center gap-3">
+          <img src={logo} alt="2 Brothers Flooring Ltd" className="h-10 w-10 md:h-12 md:w-12 object-contain" />
+          <span className="hidden sm:flex items-baseline gap-2">
+            <span className="font-display text-xl md:text-2xl text-foreground leading-none">2 Brothers</span>
+            <span className="font-display text-sm md:text-base text-muted-foreground leading-none">Flooring</span>
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-10">
@@ -30,7 +34,7 @@ const Navbar = () => {
           ))}
           <a
             href="#quote"
-            className="text-sm font-semibold text-accent-foreground bg-accent px-5 py-2.5 rounded-sm transition-all duration-200 hover:opacity-90 tracking-wide uppercase"
+            className="text-sm font-semibold text-primary-foreground bg-primary px-5 py-2.5 rounded-sm transition-all duration-200 hover:opacity-90 tracking-wide uppercase"
           >
             Get a Quote
           </a>
@@ -60,7 +64,7 @@ const Navbar = () => {
           <a
             href="#quote"
             onClick={() => setOpen(false)}
-            className="mt-4 block text-center text-sm font-semibold text-accent-foreground bg-accent px-5 py-3 rounded-sm uppercase tracking-wide"
+            className="mt-4 block text-center text-sm font-semibold text-primary-foreground bg-primary px-5 py-3 rounded-sm uppercase tracking-wide"
           >
             Get a Quote
           </a>
