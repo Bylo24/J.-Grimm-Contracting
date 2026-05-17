@@ -10,11 +10,12 @@ const navLinks = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const homeHref = import.meta.env.BASE_URL;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/40 shadow-[0_1px_0_rgba(0,0,0,0.04)]">
       <div className="section-container flex items-center justify-between h-16 sm:h-16 md:h-20">
-        <a href="/" className="text-sm md:text-base text-foreground font-normal">
+        <a href={homeHref} className="text-sm md:text-base text-foreground font-normal">
           JRM Contracting Services LTD
         </a>
 
