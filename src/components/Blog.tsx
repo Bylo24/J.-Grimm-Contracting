@@ -1,67 +1,48 @@
-import { useEffect } from "react";
+import gallery01 from "@/assets/gallery-01.svg";
+import gallery02 from "@/assets/gallery-02.svg";
+import gallery03 from "@/assets/gallery-03.svg";
+import gallery04 from "@/assets/gallery-04.svg";
 
-const instagramProfileUrl = "https://www.instagram.com/2_brothers_flooring_ltd/";
+const galleryImages = [
+  {
+    src: gallery01,
+    alt: "Completed contracting work with structural elements and interior finishes",
+  },
+  {
+    src: gallery02,
+    alt: "Neutral construction site image showing building framework and staging",
+  },
+  {
+    src: gallery03,
+    alt: "Renovated interior space with a clean finished look",
+  },
+  {
+    src: gallery04,
+    alt: "Site progress image showing contracted work and layout planning",
+  },
+];
 
 const Blog = () => {
-  useEffect(() => {
-    const instagramWindow = window as Window & {
-      instgrm?: {
-        Embeds?: {
-          process?: () => void;
-        };
-      };
-    };
-
-    const scriptId = "instagram-embed-script";
-    const existingScript = document.getElementById(scriptId) as HTMLScriptElement | null;
-
-    if (existingScript) {
-      instagramWindow.instgrm?.Embeds?.process?.();
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.id = scriptId;
-    script.async = true;
-    script.defer = true;
-    script.src = "https://www.instagram.com/embed.js";
-    script.onload = () => {
-      instagramWindow.instgrm?.Embeds?.process?.();
-    };
-
-    document.body.appendChild(script);
-  }, []);
-
   return (
     <section id="work" className="section-spacing bg-card">
       <div className="section-container">
         <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 items-start">
           <div className="max-w-xl lg:pt-8 xl:pt-10">
-            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
+            <span className="text-xs tracking-[0.25em] uppercase text-foreground mb-4 block font-sans font-normal">
               Our Work
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] text-balance">
-              See Our Work.
+              Completed projects.
             </h2>
           </div>
 
-          <div className="lg:justify-self-end w-full lg:max-w-[440px] xl:max-w-[500px]">
-            <div className="overflow-hidden rounded-sm bg-card border border-border shadow-[0_25px_80px_rgba(0,0,0,0.08)]">
-              <blockquote
-                className="instagram-media w-full !max-w-none"
-                data-instgrm-permalink={instagramProfileUrl}
-                data-instgrm-version="14"
-                style={{
-                  width: "100%",
-                  minWidth: "326px",
-                  maxWidth: "100%",
-                  margin: "0 auto",
-                }}
-              >
-                <a href={instagramProfileUrl} target="_blank" rel="noreferrer">
-                  View this profile on Instagram
-                </a>
-              </blockquote>
+          <div className="lg:justify-self-end w-full lg:max-w-[680px]">
+            <div className="grid gap-4 sm:grid-cols-2">
+              {galleryImages.map((image) => (
+                <div key={image.alt} className="overflow-hidden rounded-sm bg-neutral-100 border border-border">
+                  <img src={image.src} alt={image.alt} className="w-full h-56 object-cover" loading="lazy" />
+                </div>
+              ))}
             </div>
           </div>
         </div>

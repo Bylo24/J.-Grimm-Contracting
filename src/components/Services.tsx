@@ -1,41 +1,41 @@
-import { Home, Building2, Droplets, Package, Wrench, Layers } from "lucide-react";
+import { Home, Building2, Package, Wrench, Layers, Building } from "lucide-react";
 
 const services = [
   {
     num: "01",
     icon: Home,
-    title: "Domestic Carpet",
-    description: "Carpet supply and installation for homes of all sizes.",
+    title: "Residential Renovations",
+    description: "Complete home alterations and updating services for residential properties.",
   },
   {
     num: "02",
-    icon: Layers,
-    title: "Vinyl and Vinyl Planks",
-    description: "Sheet vinyl, glue-down planks, and herringbone styles.",
+    icon: Building2,
+    title: "Commercial Projects",
+    description: "Structural and interior contracting work for businesses and commercial spaces.",
   },
   {
     num: "03",
-    icon: Droplets,
-    title: "Wet Floors",
-    description: "Slip-resistant wet floor solutions for safer bathrooms.",
+    icon: Building,
+    title: "New Construction",
+    description: "Building services from the ground up tailored to specific project designs.",
   },
   {
     num: "04",
-    icon: Building2,
-    title: "Commercial Installations",
-    description: "Commercial flooring for cafes, gyms, offices, and salons.",
+    icon: Package,
+    title: "Project Management",
+    description: "Efficient organization and execution of construction timelines and requirements.",
   },
   {
     num: "05",
     icon: Wrench,
-    title: "Subfloors and Repairs",
-    description: "Floor prep, subfloors, and repair work done properly.",
+    title: "Quality Workmanship",
+    description: "Dependable building practices focused on delivering solid structures.",
   },
   {
     num: "06",
-    icon: Package,
-    title: "Full Supply",
-    description: "A full supply service with carpet, vinyl, cork, needle punch, and turf.",
+    icon: Layers,
+    title: "General Contracting",
+    description: "Comprehensive solutions for various repair and improvement needs.",
   },
 ];
 
@@ -45,16 +45,16 @@ const Services = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-12 gap-8 mb-12 md:mb-16">
           <div className="lg:col-span-6">
-            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
+            <span className="text-xs tracking-[0.25em] uppercase text-foreground mb-4 block font-sans font-normal">
               What We Do
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] text-balance">
-              Specialists in every floor.
+              Contracting services in Edmonton.
             </h2>
           </div>
           <div className="lg:col-span-5 lg:col-start-8 flex items-end">
             <p className="text-muted-foreground leading-relaxed text-base">
-              Big job or small, domestic or commercial, every quote is free and under no obligation.
+              We provide efficient solutions to meet the diverse needs of our clients.
             </p>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Services = () => {
               className="bg-card p-6 sm:p-7 md:p-9 group transition-colors duration-300 hover:bg-background"
             >
               <div className="flex items-start justify-between mb-6">
-                <span className="text-xs text-muted-foreground font-sans tracking-wider font-semibold group-hover:text-foreground">{service.num}</span>
+                <span className="text-xs text-muted-foreground font-sans tracking-wider font-normal group-hover:text-foreground">{service.num}</span>
                 <service.icon size={22} className="text-muted-foreground/40 group-hover:text-foreground transition-colors duration-300" strokeWidth={1.5} />
               </div>
               <h3 className="font-display text-2xl md:text-3xl text-foreground mb-3 leading-none">

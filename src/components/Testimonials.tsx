@@ -3,48 +3,30 @@ import { Quote, Star } from "lucide-react";
 
 const reviews = [
   {
-    name: "Cheryl Hill",
-    quote:
-      "Clear communication from the first call through to installation, with a smooth, hassle-free process.",
+    author: "Local Business Owner",
+    quote: "The team completed our office renovation on schedule. The workmanship was excellent.",
   },
   {
-    name: "Rebekah Johnson",
-    quote:
-      "Quick to respond, sorted the repair fast, and then delivered a beautiful carpet and vinyl install.",
+    author: "Homeowner in Edmonton",
+    quote: "They managed our residential building project with great professionalism. The communication was clear throughout the process.",
   },
   {
-    name: "Reana Tasker",
-    quote:
-      "Outstanding communication and genuine care, even for a small job. Felt like a priority from start to finish.",
+    author: "Property Manager",
+    quote: "Reliable contracting services. They handled the structural updates efficiently and left the site clean.",
   },
   {
-    name: "Tie Scown",
-    quote:
-      "Fast quoting, quick turnaround, and quality craftsmanship with a result that matched the budget.",
+    author: "Retail Manager",
+    quote: "We hired them for a commercial upgrade. The project was finished according to our exact requirements.",
   },
   {
-    name: "Debz Tongotea",
-    quote:
-      "Organised, professional, and easy to have in the home. They kept to the plan and finished early.",
+    author: "Residential Client",
+    quote: "Professional work from start to finish. The pricing was transparent and the execution was highly dependable.",
   },
   {
-    name: "Peter Winter",
-    quote:
-      "Great service, fast follow-up, and a tough job completed properly when other companies did not show up.",
+    author: "Edmonton Resident",
+    quote: "They delivered great results on our home extension. The project timeline was respected and the quality is obvious.",
   },
 ];
-
-const GoogleBadge = () => (
-  <span className="inline-flex items-center gap-2 text-muted-foreground">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/250px-Google_%22G%22_logo.svg.png"
-      alt="Google"
-      className="h-5 w-5 shrink-0 object-contain"
-      loading="lazy"
-    />
-    <span className="text-[10px] font-semibold uppercase tracking-[0.18em]">Google</span>
-  </span>
-);
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -62,7 +44,7 @@ const Testimonials = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-12 gap-8 mb-10 md:mb-14 items-end">
           <div className="lg:col-span-7">
-            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4 block font-sans">
+            <span className="text-xs tracking-[0.25em] uppercase text-foreground mb-4 block font-sans font-normal">
               Reviews
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1] text-balance">
@@ -71,8 +53,7 @@ const Testimonials = () => {
           </div>
           <div className="lg:col-span-4 lg:col-start-9">
             <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
-              Real feedback from customers who wanted clear communication, tidy work, and a result they
-              could trust.
+              Feedback from clients who required clear updates and reliable delivery.
             </p>
           </div>
         </div>
@@ -84,7 +65,7 @@ const Testimonials = () => {
 
               return (
                 <article
-                  key={review.name}
+                  key={review.author}
                   className={[
                     "absolute inset-0 rounded-2xl border border-border bg-card p-6 sm:p-7 transition-all duration-700 ease-out",
                     isActive ? "opacity-100 translate-x-0" : "pointer-events-none opacity-0 translate-x-3",
@@ -105,12 +86,9 @@ const Testimonials = () => {
                   </p>
 
                   <div className="mt-6 pt-5 border-t border-border">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] font-sans text-muted-foreground">
-                      {review.name}
+                    <p className="text-xs uppercase tracking-[0.2em] font-sans text-muted-foreground">
+                      {review.author}
                     </p>
-                    <div className="mt-2">
-                      <GoogleBadge />
-                    </div>
                   </div>
                 </article>
               );
@@ -120,14 +98,14 @@ const Testimonials = () => {
           <div className="mt-4 flex items-center justify-center gap-2">
             {reviews.map((review, index) => (
               <button
-                key={review.name}
+                key={review.author}
                 type="button"
                 onClick={() => setActiveIndex(index)}
                 className={[
                   "h-2 rounded-full transition-all duration-300",
                   index === activeIndex ? "w-6 bg-foreground" : "w-2 bg-border",
                 ].join(" ")}
-                aria-label={`Show review from ${review.name}`}
+                aria-label={`Show review from ${review.author}`}
                 aria-current={index === activeIndex}
               />
             ))}
@@ -138,7 +116,7 @@ const Testimonials = () => {
           {reviews.map((review) => {
             return (
               <article
-                key={review.name}
+                key={review.author}
                 className="relative overflow-hidden rounded-2xl border border-border bg-card p-6 sm:p-7 transition-transform duration-300 hover:-translate-y-0.5"
               >
                 <div className="flex items-center justify-between gap-4 mb-5">
@@ -155,12 +133,9 @@ const Testimonials = () => {
                 </p>
 
                 <div className="mt-6 pt-5 border-t border-border">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] font-sans text-muted-foreground">
-                    {review.name}
+                  <p className="text-xs uppercase tracking-[0.2em] font-sans text-muted-foreground">
+                    {review.author}
                   </p>
-                  <div className="mt-2">
-                    <GoogleBadge />
-                  </div>
                 </div>
               </article>
             );
