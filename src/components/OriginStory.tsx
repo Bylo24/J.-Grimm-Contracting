@@ -1,4 +1,4 @@
-import teamSite from "@/assets/team-site.svg";
+import teamSite from "@/assets/team-site.svg?url";
 
 const features = [
   {
